@@ -94,6 +94,8 @@ I approached this like a data product — not just a spreadsheet.
 
 	This converted the sheet into a fully automated assessment engine.
 
+
+
 Sample Output
 ------
 <img src= "Images/Mail.png" width="400" align="left" /> 
@@ -107,6 +109,8 @@ This image displays a customized NAAS Assessment Results email sent individually
 ✔  At the bottom, a visual performance bar indicates the overall standing, positioned between “Needs Support” and “Sustainable.”
 
 ✔  The email also features a clear call-to-action button encouraging the recipient to schedule a free consultation.
+
+
 
 
 
