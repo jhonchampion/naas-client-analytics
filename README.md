@@ -146,7 +146,7 @@ This image displays a customized NAAS Assessment Results email sent individually
 
 
 
-- [Scoring Model Details](scoring-model/model.md)
+- [Scoring Model Details](scoring-model/logic.md)
 - [AppScript](AppScript/automation.gs)
 
 
