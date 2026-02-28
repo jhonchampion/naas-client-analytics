@@ -23,17 +23,23 @@ Many small and mid-sized NGOs struggle to clearly understand their operational c
 
 This project was built to solve that problem.
 
-I designed and automated a data-driven assessment engine that:
+### - The Business Problem
 
-	•	Collects structured responses from NGOs
-	•	Transforms qualitative inputs into quantitative scores
-	•	Segments organizations by capacity level
-	•	Automatically generates personalized analytical reports
-	•	Recommends targeted solutions based on performance gaps
 
-This project includes a **Google Apps Script** that automates the processing of NGO assessment submissions from a Google Sheet. It calculates scores, generates insights, emails respondents, and stores PDF reports in Google Drive.
+Manual assessment processes created three major issues:
 
-### How It Works
+	❌ No standardized evaluation framework
+	❌ Time-consuming manual report writing
+	❌ Generic recommendations not tailored to organizational needs
+
+The goal was to build a lightweight, scalable system that:
+
+	✅ Standardizes evaluation criteria
+	✅ Automates scoring logic
+	✅ Produces actionable, personalized feedback
+	✅ Reduces turnaround time from hours to minutes
+---
+### - How It Works
 
 1. **Trigger:**  
    - The script runs automatically on form submission (`onFormSubmit`).
@@ -88,27 +94,16 @@ This project includes a **Google Apps Script** that automates the processing of 
 | Visibility & Media     | 25 / 30    | 83%        | Sustainable        | Branding & Media Campaigns       |
 
 **Overall Assessment:** `Sustainable` ✅
+This setup allows **automated, consistent, and auditable scoring** while reducing manual workload, improving decision-making, and delivering actionable insights to respondents and internal stakeholders.
 
 ---
 
-This setup allows **automated, consistent, and auditable scoring** while reducing manual workload, improving decision-making, and delivering actionable insights to respondents and internal stakeholders.
 
-The Business Problem
-------
-
-Manual assessment processes created three major issues:
-
-	❌ No standardized evaluation framework
-	❌ Time-consuming manual report writing
-	❌ Generic recommendations not tailored to organizational needs
-
-The goal was to build a lightweight, scalable system that:
-
-	✅ Standardizes evaluation criteria
-	✅ Automates scoring logic
-	✅ Produces actionable, personalized feedback
-	✅ Reduces turnaround time from hours to minutes
-
+Documentation/files
+---
+- [Scoring Model Details](scoring-model/logic.md)
+- [AppScript](AppScript/automation.gs)
+---
 
 Screenshots/ Sample Output
 ------
@@ -144,10 +139,6 @@ This image displays a customized NAAS Assessment Results email sent individually
 
 
 
-
-
-- [Scoring Model Details](scoring-model/logic.md)
-- [AppScript](AppScript/automation.gs)
 
 
 
