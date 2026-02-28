@@ -1,24 +1,83 @@
-# NAAS(NGO-as-a-service) Client Intake Analytics
+# NAAS (NGO-As-A-Service) Client Intake Analytics
 
-Project Overview
+### Project Overview
+Many small and mid-sized NGOs struggle to clearly understand their operational capacity, funding readiness, and growth gaps. As a result, support organizations often provide generic advice instead of targeted solutions.
 
-Servelead Humanitarian Initiative needed to scale its NAAS (Nonprofit-as-a-Service) offering by automating client intake, analysis, and recommendation delivery.
+This project was built to solve that problem.
 
-Manual review of NGO responses was:
-	•	Time-intensive
-	•	Subjective
-	•	Difficult to scale
+I designed and automated a data-driven assessment engine that:
 
-I designed and deployed a fully automated assessment and reporting pipeline using Google Sheets and Apps Script.
+	•	Collects structured responses from NGOs
+	•	Transforms qualitative inputs into quantitative scores
+	•	Segments organizations by capacity level
+	•	Automatically generates personalized analytical reports
+	•	Recommends targeted solutions based on performance gaps
 
- Solution Architecture
+The entire system runs on Google Sheets + Apps Script automation, transforming a simple intake form into a scalable analytics and reporting pipeline.
 
-Form Submission
-→ Scoring Engine (Weighted Multi-Factor Model)
-→ Capacity Segmentation
-→ Rule-Based Service Matching
-→ Automated Email Report
-→ PDF Generation
-→ Drive Archiving
-→ Consultation Booking Trigger
+The Business Problem
+------
+
+Manual assessment processes created three major issues:
+
+	❌ No standardized evaluation framework
+	❌ Time-consuming manual report writing
+	❌ Generic recommendations not tailored to organizational needs
+
+The goal was to build a lightweight, scalable system that:
+
+	✅ Standardizes evaluation criteria
+	✅ Automates scoring logic
+	✅ Produces actionable, personalized feedback
+	✅ Reduces turnaround time from hours to minutes
+
+
+My Approach
+------
+
+I approached this like a data product — not just a spreadsheet.
+
+1. Framework Design
+	- Defined key operational questions & answers
+	- Built weighted scoring models 
+	- Designed a composite maturity index
+	- Created segmentation tiers based on overall performance
+
+   All scoring logic was implemented using structured spreadsheet formulas.
+
+ 2. Analytical Scoring Model
+	Each respondent’s inputs were:
+	- Normalized
+	- Weighted
+	- Combined into a final maturity score
+
+	The system produces:
+	- Overall capacity rating
+	- Gap identification
+	- Priority intervention areas
+
+	This transformed qualitative survey data into measurable insights.
+
+ 3. Automation with Google Apps Script
+
+	To eliminate manual work, I developed an Apps Script automation layer that:
+	- Detects new responses
+	- Calculates scoring outputs
+	- Generates a personalized analytical report
+	- Sends automated emails with:
+		✔ Performance summary
+		✔ Identified weaknesses
+		✔ Strategic recommendations
+
+	This converted the sheet into a fully automated assessment engine.
+
+Sample Output
+------
+
+Each respondent receives:
+	•	A personalized performance breakdown
+	•	Clear identification of low-scoring domains
+	•	Priority recommendations
+	•	Suggested service alignment
+
 
