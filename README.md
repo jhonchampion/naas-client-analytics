@@ -73,6 +73,7 @@ I approached this like a data product — not just a spreadsheet.
 
 Sample Output
 ------
+![](Images/Revenue_trend.png)
 
 Each respondent receives:
 	•	A personalized performance breakdown
