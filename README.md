@@ -1,6 +1,24 @@
 # NAAS (NGO-As-A-Service) Client Intake Analytics
 
-### Project Overview
+Executive Summary
+------
+
+This project is an automated NGO capacity assessment engine built using Google Sheets and Google Apps Script.
+
+The system operationalizes qualitative survey data into a structured, weighted scoring model that evaluates organizational readiness across multiple domains. Responses are normalized, aggregated into key problem area indices, and combined into a composite maturity score used for segmentation and qualification.
+
+ Measurable Impact:
+ 
+	•	Reduced report generation time by approximately 80%
+	•	Eliminated an estimated 8–12 hours of manual review per week
+	•	Scaled to handle over 1000 respondents per week
+	•	Standardized evaluation criteria, removing subjective bias in qualification decisions
+	•	Improved consultation efficiency through pre-call analytical reporting
+
+The result is a lightweight decision-support system that integrates data modeling, automation, and reporting into a scalable operational workflow.
+
+Project Overview
+------
 Many small and mid-sized NGOs struggle to clearly understand their operational capacity, funding readiness, and growth gaps. As a result, support organizations often provide generic advice instead of targeted solutions.
 
 This project was built to solve that problem.
@@ -38,6 +56,8 @@ My Approach
 I approached this like a data product — not just a spreadsheet.
 
 1. Framework Design
+<img src= "Images/Recommendation.png" /> 
+
 	- Defined key operational questions & answers
 	- Built weighted scoring models 
 	- Designed a composite maturity index
@@ -46,6 +66,8 @@ I approached this like a data product — not just a spreadsheet.
    All scoring logic was implemented using structured spreadsheet formulas.
 
  2. Analytical Scoring Model
+<img src= "Images/Scoring_logic.png" /> 
+
 	Each respondent’s inputs were:
 	- Normalized
 	- Weighted
@@ -59,6 +81,7 @@ I approached this like a data product — not just a spreadsheet.
 	This transformed qualitative survey data into measurable insights.
 
  3. Automation with Google Apps Script
+<img src= "Images/App_Script.png" width="400" align="left" />
 
 	To eliminate manual work, I developed an Apps Script automation layer that:
 	- Detects new responses
@@ -73,12 +96,21 @@ I approached this like a data product — not just a spreadsheet.
 
 Sample Output
 ------
-![](Images/Revenue_trend.png)
+<img src= "Images/Mail.png" width="400" align="left" /> 
 
-Each respondent receives:
-	•	A personalized performance breakdown
-	•	Clear identification of low-scoring domains
-	•	Priority recommendations
-	•	Suggested service alignment
+This image displays a customized NAAS Assessment Results email sent individually to clients.
+
+✔  It outlines the organization’s performance across five core areas, using scores to determine whether each area is sustainable or requires additional support.
+  
+✔  Based on these results, tailored service recommendations are provided.
+
+✔  At the bottom, a visual performance bar indicates the overall standing, positioned between “Needs Support” and “Sustainable.”
+
+✔  The email also features a clear call-to-action button encouraging the recipient to schedule a free consultation.
+
+
+
+
+
 
 
